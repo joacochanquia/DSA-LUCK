@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  db:
+    container_name: mysqldb-ctf
+    image: mysql:5.7
+    restart: always
+    environment:
+        MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+        MYSQL_DATABASE: "ctf"
+        MYSQL_USER: "user"
+        MYSQL_PASSWORD: "password"
+    volumes:
+      - "./database/:/docker-entrypoint-initdb.d"
+
+  pythonctf:
+    container_name: python-ctf
+    image: ctf-project
+    restart: always
+    links:
+      - db
+    depends_on:
+      - db
+    volumes:
+      - "./www/:/www/"
+    ports:
+      - 50000:8888
