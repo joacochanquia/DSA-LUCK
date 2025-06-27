@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Broken Access Control</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo 1" class="header-logo">
+                <div class="header-title">Panel de Administrador</div>
+                <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo 2" class="header-logo">
+            </div>
+            <a href="{{ url_for('index.index') }}" class="back-btn">Volver al menú principal</a>
+        </header>
+        <main>
+            <section>
+                <h2>Bienvenido, administrador</h2>
+                <p>Esta es información confidencial solo para administradores.</p>
+                <h3>Clave privada PGP</h3>
+                <a href="{{ url_for('static', filename='files/private_key.asc') }}" download>
+                    <button type="button">Descargar clave privada</button>
+                </a>
+        </main>
+    </div>
+</body>
+</html>
