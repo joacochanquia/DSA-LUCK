@@ -44,8 +44,8 @@ Se modifico el html (sacando el |safe del punto vulnerable), para que si se ingr
 
 ### Encriptacion
 
-Como la forma de encontrar la contraseña del admin era mediante la cookie de la pagina anterior, esta pagina ya no es vulnerable porque la información ya no se encuentra disponible a los usuarios
+Como la forma de encontrar la contraseña del admin era mediante la cookie de la pagina anterior, esta pagina ya no es vulnerable porque la información ya no se encuentra disponible a los usuarios.
 
 ### SQLI
 
-
+Para solucionar las inyecciones SQL se elimino la anterior busqueda con inyeccion directa de los parametros recibidos en la aplicacion y se implemento una consulta parametrizada. Ademas de primero verificar que los parametros recibidos sean realmente numeros enteros.
