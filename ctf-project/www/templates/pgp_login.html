@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Broken Access Control</title>
+    <title>Login - Encriptación</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <div class="container">
         <header>
             <div class="header">
-                <div class="header-title">Panel de Administrador</div>
+                <div class="header-title">Iniciar Sesión</div>
             </div>
-            <a href="{{ url_for('index.index') }}" class="back-btn">Volver al menú principal</a>
+            <a href="{{ url_for('pgp') }}" class="back-btn">Volver a información de Encriptación</a>
         </header>
         <main>
             <section>
-                <h2>Bienvenido, administrador</h2>
-                <p>Esta es información confidencial solo para administradores.</p>
-                <h3>Clave privada PGP</h3>
-                <a href="{{ url_for('static', filename='files/private_key.asc') }}" download>
-                    <button type="button">Descargar clave privada</button>
-                </a>
+                <h2>Acceso de Administrador</h2>
+                <p>Ingrese sus credenciales para acceder al panel de administración:</p>
+                
+                {% with messages = get_flashed_messages() %}
+                  {% if messages %}
+                    {% for message in messages %}
+                      <div class="alert">{{ message }}</div>
+                    {% endfor %}
+                  {% endif %}
+                {% endwith %}
+                
+                <form action="{{ url_for('pgp_login') }}" method="post">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                    <br><br>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    <button type="submit">Iniciar sesión</button>
+                </form>
+            </section>
         </main>
     </div>
 </body>

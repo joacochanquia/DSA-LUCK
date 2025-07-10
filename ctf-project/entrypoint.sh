@@ -1,6 +1,7 @@
 #!/bin/bash
-echo "TEST"
+echo "Starting CTF Application..."
 
 pip install -r /requirements.txt
 
-python -m flask run --host=0.0.0.0
+cd /www
+python app.py

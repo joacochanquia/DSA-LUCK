@@ -12,10 +12,10 @@
             <div class="header">
                 <div class="header-title">Materias de Ingeniería en Computación</div>
             </div>
-            <a href="{{ url_for('sqli.sqli') }}" class="back-btn">Volver a información SQLI</a>
+            <a href="{{ url_for('sqli') }}" class="back-btn">Volver a información SQLI</a>
         </header>
         <main>
-            <form action="{{ url_for('sqli.sqli_database') }}" method="GET">
+            <form action="{{ url_for('sqli_database') }}" method="GET">
                 <label for="search">Buscar materia:</label>
                 <input type="text" id="search" name="search" placeholder="Ej: 1" required>
                 <button type="submit">Buscar</button>

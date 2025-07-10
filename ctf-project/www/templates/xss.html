@@ -12,7 +12,7 @@
             <div class="header">
                 <div class="header-title">XSS - Cross-Site Scripting</div>
             </div>
-            <a href="{{ url_for('index.index') }}" class="back-btn">Volver al menú principal</a>
+            <a href="{{ url_for('index') }}" class="back-btn">Volver al menú principal</a>
         </header>
         <main>
             <section>
@@ -21,7 +21,7 @@
                 <p>Estos scripts pueden robar información sensible, como cookies de sesión, o realizar acciones en nombre del usuario sin su consentimiento.</p>
                 <br>
                 <h2>Ejemplo vulnerable a XSS</h2>
-                <form method="post" action="{{ url_for('xss.xss') }}">
+                <form method="post" action="{{ url_for('xss') }}">
                     <label for="nameInput">Ingrese su nombre:</label>
                     <input type="text" id="nameInput" name="name" required>
                     <button type="submit">Enviar</button>
