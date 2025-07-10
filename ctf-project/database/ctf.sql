@@ -30,7 +30,7 @@ wYwDNcBLPd397YMBBACGkYHWsHi0Cd+Z1s0TYzuTvh2jM12V3wxNeLhyFc23LF3I
 AfKwVr/Upol0kfoTkpu6IP5I4vWhchI1BV9Vp31omQqk1glZm5d5QjcmnXZaJ1LH
 =XwpR
 -----END PGP MESSAGE-----'),
-('Quimica', 'U0902', 6, 84, '-----BEGIN PGP MESSAGE-----
+('Quimica Para Ingenieria', 'U0902', 6, 84, '-----BEGIN PGP MESSAGE-----
 Version: Keybase OpenPGP v2.1.15
 Comment: https://keybase.io/crypto
 

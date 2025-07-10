@@ -1,9 +1,12 @@
 from flask import Flask
+import os
 
 def create_app():
     app = Flask(__name__)
-    app.secret_key = 'muyfacil'
-
+    
+    app.secret_key = os.getenv('SECRET_KEY', 'LUCK(Let Us Cook)((secreto))')
+    app.config['DEBUG'] = os.getenv('FLASK_DEBUG', 'False').lower() == 'true'
+    
     with app.app_context():
         from .routes.index import index_bp
         from .routes.xss import xss_bp

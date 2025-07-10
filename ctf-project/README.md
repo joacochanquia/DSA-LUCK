@@ -6,7 +6,7 @@
 - Bruno Zanetti
 
 ## Dockerfile y docker-compose.yml
-El proyecto incluye un `Dockerfile` para construir la imagen de la aplicación Flask y un `docker-compose.yml` para levantar tanto la aplicación como la base de datos MySQL fácilmente.
+El proyecto incluye un `Dockerfile` para construir la imagen de la aplicación Flask y un `docker-compose.yml` para levantar tanto la aplicación como la base de datos MySQL fácilmente. Tambien se incluye un archivo `run.sh`, el cual ejecuta los comandos necesarios para levantar la aplicacion.
 
 - Para construir y levantar el entorno completo:
   ```bash

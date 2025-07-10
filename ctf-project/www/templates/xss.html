@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo 1" class="header-logo">
-            <div class="header-title">XSS - Cross-Site Scripting</div>
-            <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="Logo 2" class="header-logo">
-        </div>
-        <a href="{{ url_for('index.index') }}" class="back-btn">Volver al menú principal</a>
+        <header>
+            <div class="header">
+                <div class="header-title">XSS - Cross-Site Scripting</div>
+            </div>
+            <a href="{{ url_for('index.index') }}" class="back-btn">Volver al menú principal</a>
+        </header>
         <main>
             <section>
                 <h2>Información sobre XSS</h2>

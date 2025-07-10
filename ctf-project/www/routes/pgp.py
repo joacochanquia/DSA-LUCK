@@ -5,6 +5,7 @@ pgp_bp = Blueprint('pgp', __name__)
 
 @pgp_bp.route('/pgp', methods=['GET', 'POST'])
 def pgp():
+    session['logged_in'] = False
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
