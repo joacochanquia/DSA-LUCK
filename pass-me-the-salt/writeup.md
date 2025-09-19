@@ -47,7 +47,7 @@ bytes.fromhex(X) == b"61646d696e"
 
 ## Solución
 
-Necesito convertir cada carácter de la string "61646d696e" a su valor hexadecimal ASCII:
+Necesitamos convertir cada carácter de la string "61646d696e" a su valor hexadecimal ASCII:
 
 - '6' → 0x36 → 36
 - '1' → 0x31 → 31  
