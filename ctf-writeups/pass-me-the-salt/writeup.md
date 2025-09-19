@@ -4,6 +4,8 @@
 ## Descripción del Desafío
 
 El desafío nos presenta un servicio que maneja cuentas de usuario con un sistema de login. El servidor nos proporciona el código fuente en Python para que podamos analizarlo y encontrar la vulnerabilidad.
+<img width="590" height="608" alt="image" src="https://github.com/user-attachments/assets/568a78cb-8da4-4c42-aae1-3b1767311b82" />
+
 
 ## Análisis del Código
 
