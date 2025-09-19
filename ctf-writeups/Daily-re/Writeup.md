@@ -37,6 +37,10 @@ La pista del reto indicaba que no se podía hacer trampa fácilmente, por lo que
 
 ![Salida del script de Python](imagenes/respuesta.png)
 
+
+
 ### Validación y flag
 - Combinando las palabras obtenidas, la flag final es: K17{limbo, urban, fiber}
+![Flag encontrada subida](imagenes/Resuelto.PNG)
+
 
