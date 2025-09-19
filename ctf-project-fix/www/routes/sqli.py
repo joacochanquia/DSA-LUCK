@@ -36,7 +36,7 @@ def sqli_database():
             
             conn = get_connection()
             
-            # CORREGIDO: Usar consulta parametrizada para prevenir SQL Injection
+            # Usar consulta parametrizada para prevenir SQL Injection
             # En lugar de concatenar directamente, usamos parámetros seguros
             query = text("SELECT * FROM subjects WHERE id = :search_id")
             result = conn.execute(query, {'search_id': int(search)}).fetchall()
