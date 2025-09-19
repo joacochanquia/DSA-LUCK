@@ -2,6 +2,7 @@
 
 ## Introducción
 Este reto consistió en descubrir las palabras diarias que el juego **"Legally Distinct Daily Game"** usa para los días 72, 73 y 74, con el objetivo de obtener la flag en el formato:
+
 ![Página del reto](imagenes/Desafio.PNG)
 
 ## Descripción del reto
