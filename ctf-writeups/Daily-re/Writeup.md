@@ -8,6 +8,7 @@ Este reto consistió en descubrir las palabras diarias que el juego **"Legally D
 Se nos daba acceso a una página web con un juego estilo *Wordle* que mostraba únicamente la palabra del día actual, sin revelar las palabras de días anteriores ni posteriores.  
 La pista del reto indicaba que no se podía hacer trampa fácilmente, por lo que debíamos investigar cómo se generaban las palabras de cada día.
 
+
 ![Página del reto](imagenes/Pagina.PNG)
 
 ## Proceso de resolución
