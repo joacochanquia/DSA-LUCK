@@ -23,7 +23,7 @@ La pista del reto indicaba que no se podía hacer trampa fácilmente, por lo que
 ![Archivo words.wasm](imagenes/words.PNG)
 
 ### Extracción de las palabras
-- Se utilizó un script en Python (`script_extraccion.py`) para extraer las palabras del segmento de datos dentro del `.wasm`.  
+- Se utilizó un script en Python (`Words.py`) para extraer las palabras del segmento de datos dentro del `.wasm`.  
 - Se aplicó una expresión regular para filtrar todas las palabras de 5 letras.  
 - Finalmente, se obtuvieron las palabras correspondientes a los días solicitados:
 
