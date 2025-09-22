@@ -137,4 +137,5 @@ python3 exploit.py
 
 ## Flag
 La flag se obtiene al hacer login exitoso con las credenciales explotadas.
+Flag: K17CTF{s4Lt_4nD_p3pper_is_ov3rr4t3d}
 
